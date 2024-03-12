@@ -32,3 +32,9 @@ exercises.c:45:17: error: ‘sizeNew’ undeclared (first use in this function);
 exercises.c:45:17: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 5e4b31c
+Tue 12 Mar 2024 01:08:30 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|5
+total_score: 20/70
+558dc76
