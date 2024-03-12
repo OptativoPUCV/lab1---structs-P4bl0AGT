@@ -42,7 +42,7 @@ los números pares del arreglo original.
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize)
 {
-  printf("%i", *newSize);
+  printf("(%i)", *newSize);
   return NULL;
 }
 
