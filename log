@@ -20,3 +20,15 @@ Tue 12 Mar 2024 01:07:08 AM UTC:
  tests:  0|5
 total_score: 20/70
 6f4ee08
+Tue 12 Mar 2024 01:08:23 AM UTC: 
+ exercises.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:45:17: error: ‘sizeNew’ undeclared (first use in this function); did you mean ‘size’?
+   45 |   printf("%i", *sizeNew);
+      |                 ^~~~~~~
+      |                 size
+exercises.c:45:17: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+5e4b31c
