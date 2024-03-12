@@ -76,7 +76,11 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[
       result[cont++] = arr2[j++];    
   }
 
-  printf("indice i (%i), indice j (%i)", i, j);
+  while(i < size1)
+    result[cont++] = arr1[i++];
+
+  while(j < size2)
+    result[cont++] = arr2[j++];
 }
 
 /*
