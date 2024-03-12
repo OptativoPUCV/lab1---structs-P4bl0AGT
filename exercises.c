@@ -64,7 +64,7 @@ arreglos en un tercer arreglo también ordenado.
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[])
 {
   int size3 = size1 + size2;
-  result = (int *) malloc(sizeof(int) * size3);
+  result = (int *) calloc(sizeof(int), size3);
 }
 
 /*
