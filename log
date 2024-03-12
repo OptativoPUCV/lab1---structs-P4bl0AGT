@@ -443,3 +443,9 @@ test.c:370:20: error: request for member ‘siguiente’ in something not a stru
 cc1: all warnings being treated as errors
 Compilation failed
 392f83f
+Tue 12 Mar 2024 02:27:45 PM UTC: 
+ exercises.c | 18 +++++++++---------
+ 1 file changed, 9 insertions(+), 9 deletions(-)
+ tests:  0|0
+total_score: 70/70
+6aa2da8
