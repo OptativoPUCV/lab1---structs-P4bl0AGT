@@ -61,11 +61,20 @@ Descripción: Escribe una función que tome dos arreglos
 ordenados y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado.
 */
+//todos los parametros contienen algo*
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[])
 {
-  //int size3 = size1 + size2;
-  //result = (int *) malloc(sizeof(int) * size3);
-  result[1] = 2;
+  int i = 0;
+  int j = 0;
+  int cont = 0;
+
+  while( (i < size1) && (j < size2) )
+  {
+    if(arr1[i] < arr2[j])
+      result[cont++] = arr1[i++];
+    else
+      result[cont++] = arr2[j++];
+  }
 }
 
 /*
