@@ -63,11 +63,8 @@ arreglos en un tercer arreglo también ordenado.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[])
 {
-  result = NULL;
-  if(result == NULL)
-    printf("Array Nulo");
-  else
-    printf("Array no Nulo");
+  int size3 = size1 + size2;
+  result = (int *) malloc(sizeof(int) * size3);
 }
 
 /*
