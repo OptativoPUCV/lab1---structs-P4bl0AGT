@@ -1,1 +1,10 @@
 
+Tue 12 Mar 2024 01:04:09 AM UTC: 
+ exercises.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c:13:1: error: expected ‘;’, ‘,’ or ‘)’ before ‘{’ token
+   13 | {
+      | ^
+Compilation failed
+3f4f40e
