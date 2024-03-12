@@ -61,8 +61,13 @@ Descripción: Escribe una función que tome dos arreglos
 ordenados y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado.
 */
-void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
-                       int result[]) {}
+void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[])
+{
+  if(result == NULL)
+    printf("Array Nulo");
+  else
+    printf("Array no Nulo");
+}
 
 /*
 Ejercicio 5: Comprobación de Ordenación
