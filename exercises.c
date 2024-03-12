@@ -153,9 +153,36 @@ lista enlazada.
 Recuerda reservar memoria dinámica para cada nodo usando malloc.
   */
 
-typedef struct nodo {
+typedef struct tipoNodo {
   int numero;
-  struct nodo *siguiente; // puntero al siguiente nodo
-} Nodo;
+  struct tipoNodo *siguiente; // puntero al siguiente nodo
+} tipoNodo;
 
-Nodo *crearListaEnlazada(int arr[], int size) { return NULL; }
+tipoNodo *crearListaEnlazada(int arr[], int size)
+{
+  tipoNodo *head = NULL;//PUNTERO A PRIMER NODO
+  tipoNodo *nodo;
+  tipoNodo *newNodo;
+  for(int i = 0 ; i < size ; i++)
+  {
+    //PRIMER NODO
+    if(i == 0)// PRIMERA VEZ
+    {
+      nodo = (tipoNodo *) malloc(sizeof(tipoNodo));
+      nodo->numero = arr[i];
+      nodo->siguiente = NULL;
+      head = nodo;
+    }
+    else
+    {
+      newNodo = (tipoNodo *) malloc(sizeof(tipoNodo));
+      newNodo->numero = arr[i];
+      newNodo->siguiente = NULL;
+
+      nodo->siguiente = newNodo;
+      nodo = newNodo;
+    }
+  }
+  
+  return head;
+}
