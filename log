@@ -137,3 +137,29 @@ Tue 12 Mar 2024 01:30:39 AM UTC:
  tests:  0|3
 total_score: 40/70
 941045c
+Tue 12 Mar 2024 01:35:51 AM UTC: 
+ exercises.c | 18 +++++++++++++++++-
+ 1 file changed, 17 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:99:26: error: expected statement before ‘)’ token
+   99 |     if(arr[i] < arr[i+1])) //ascendente
+      |                          ^
+exercises.c:101:5: error: ‘else’ without a previous ‘if’
+  101 |     else if(arr[i] > arr[i+1]) //descendente)
+      |     ^~~~
+exercises.c:108:13: error: invalid suffix "M" on integer constant
+  108 |     return -1M
+      |             ^~
+exercises.c:108:15: error: expected ‘;’ before ‘else’
+  108 |     return -1M
+      |               ^
+      |               ;
+  109 |   else
+      |   ~~~~         
+exercises.c:111:1: error: control reaches end of non-void function [-Werror=return-type]
+  111 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+d67574f
