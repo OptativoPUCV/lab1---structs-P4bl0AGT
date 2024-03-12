@@ -42,8 +42,17 @@ los números pares del arreglo original.
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize)
 {
-  printf("(%i)", *newSize);
-  return NULL;
+  (*newSize) = 0;
+  int *newArray = NULL;
+  for(int i = 0 ; i < size ; i++)
+    if(arr[i] % 2 == 0)
+    {
+      newArray = (int *) rellloc(newArray, sizeof(int) * (*newSize + 1));
+      newArray[*newSize] = arr[i];
+      (*newSize)++;
+    }
+      
+  return newArray;
 }
 
 /*

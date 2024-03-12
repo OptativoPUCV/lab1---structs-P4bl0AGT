@@ -44,3 +44,18 @@ Tue 12 Mar 2024 01:08:45 AM UTC:
  tests:  0|5
 total_score: 20/70
 c323bee
+Tue 12 Mar 2024 01:13:35 AM UTC: 
+ exercises.c | 13 +++++++++++--
+ 1 file changed, 11 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:50:26: error: implicit declaration of function ‘rellloc’; did you mean ‘realloc’? [-Werror=implicit-function-declaration]
+   50 |       newArray = (int *) rellloc(newArray, sizeof(int) * (*newSize + 1));
+      |                          ^~~~~~~
+      |                          realloc
+exercises.c:50:18: error: cast to pointer from integer of different size [-Werror=int-to-pointer-cast]
+   50 |       newArray = (int *) rellloc(newArray, sizeof(int) * (*newSize + 1));
+      |                  ^
+cc1: all warnings being treated as errors
+Compilation failed
+4624501
